@@ -13,7 +13,6 @@ const storage = createStorage({
 
 export default defineEventHandler(async (event) => {
   const fileName = event.context.params.fileName;
-  console.log(fileName);
   try {
     const content_files = await fs.promises.readdir('./content');
 
